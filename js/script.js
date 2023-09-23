@@ -1,3 +1,4 @@
+
 $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
@@ -83,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  [...], // ***** <---- TODO: STEP 1: Substitute [...] ******
+  ['SP'], // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
